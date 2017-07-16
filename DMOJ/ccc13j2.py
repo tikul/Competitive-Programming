@@ -1,0 +1,1 @@
+print("NO" if any(i not in "IOSHZXN" for i in input()) else "YES")
