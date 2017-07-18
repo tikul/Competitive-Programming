@@ -206,23 +206,24 @@ Problem|Source|Language|Difficulty|
 ## Codeforces
 Problem|Source|Language|Difficulty|
 ---|---|---|---|
-[712B](http://codeforces.com/problemset/problem/821/B)|[Source](Codeforces/712B.cpp)|GNU C++11|1000.0|
-[810A](http://codeforces.com/problemset/problem/811/A)|[Source](Codeforces/810A.py)|Python 3|500.0|
+[712B](http://codeforces.com/problemset/problem/712/B)|[Source](Codeforces/712B.cpp)|GNU C++11|1000.0|
+[810A](http://codeforces.com/problemset/problem/810/A)|[Source](Codeforces/810A.py)|Python 3|500.0|
 [811A](http://codeforces.com/problemset/problem/811/A)|[Source](Codeforces/811A.cpp)|GNU C++11|500.0|
-[811B](http://codeforces.com/problemset/problem/812/B)|[Source](Codeforces/811B.cpp)|GNU C++11|1000.0|
-[812A](http://codeforces.com/problemset/problem/814/A)|[Source](Codeforces/812A.cpp)|GNU C++11|500.0|
-[812C](http://codeforces.com/problemset/problem/814/C)|[Source](Codeforces/812C.cpp)|GNU C++11|1500.0|
-[814A](http://codeforces.com/problemset/problem/816/A)|[Source](Codeforces/814A.cpp)|GNU C++11|500.0|
-[814B](http://codeforces.com/problemset/problem/712/B)|[Source](Codeforces/814B.cpp)|GNU C++11|1000.0|
+[811B](http://codeforces.com/problemset/problem/811/B)|[Source](Codeforces/811B.cpp)|GNU C++11|1000.0|
+[812A](http://codeforces.com/problemset/problem/812/A)|[Source](Codeforces/812A.cpp)|GNU C++11|500.0|
+[812C](http://codeforces.com/problemset/problem/812/C)|[Source](Codeforces/812C.cpp)|GNU C++11|1500.0|
+[814A](http://codeforces.com/problemset/problem/814/A)|[Source](Codeforces/814A.cpp)|GNU C++11|500.0|
+[814B](http://codeforces.com/problemset/problem/814/B)|[Source](Codeforces/814B.cpp)|GNU C++11|1000.0|
 [816A](http://codeforces.com/problemset/problem/816/A)|[Source](Codeforces/816A.py)|Python 3|500.0|
-[816B](http://codeforces.com/problemset/problem/812/B)|[Source](Codeforces/816B.cpp)|GNU C++11|1000.0|
+[816B](http://codeforces.com/problemset/problem/816/B)|[Source](Codeforces/816B.cpp)|GNU C++11|1000.0|
 [821A](http://codeforces.com/problemset/problem/821/A)|[Source](Codeforces/821A.cpp)|GNU C++11|500.0|
 [821B](http://codeforces.com/problemset/problem/821/B)|[Source](Codeforces/821B.cpp)|GNU C++11|1000.0|
-[821C](http://codeforces.com/problemset/problem/822/C)|[Source](Codeforces/821C.cpp)|GNU C++11|1500.0|
+[821C](http://codeforces.com/problemset/problem/821/C)|[Source](Codeforces/821C.cpp)|GNU C++11|1500.0|
 [822A](http://codeforces.com/problemset/problem/822/A)|[Source](Codeforces/822A.cpp)|GNU C++11|500.0|
-[822B](http://codeforces.com/problemset/problem/828/B)|[Source](Codeforces/822B.cpp)|GNU C++11|750.0|
+[822B](http://codeforces.com/problemset/problem/822/B)|[Source](Codeforces/822B.cpp)|GNU C++11|750.0|
 [828A](http://codeforces.com/problemset/problem/828/A)|[Source](Codeforces/828A.cpp)|GNU C++11|500.0|
-[828B](http://codeforces.com/problemset/problem/831/B)|[Source](Codeforces/828B.cpp)|GNU C++11|750.0|
+[828B](http://codeforces.com/problemset/problem/828/B)|[Source](Codeforces/828B.cpp)|GNU C++11|750.0|
+[831A](http://codeforces.com/problemset/problem/831/A)|[Source](Codeforces/831A.cpp)|GNU C++11|500.0|
 [831B](http://codeforces.com/problemset/problem/831/B)|[Source](Codeforces/831B.py)|Python 3|750.0|
 [831C](http://codeforces.com/problemset/problem/831/C)|[Source](Codeforces/831C.cpp)|GNU C++11|1000.0|
 ## SPOJ

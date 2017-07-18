@@ -1,20 +1,54 @@
-line = input().split(":")
+#include <iostream>
+#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <utility>
+#include <cmath>
+#include <algorithm>
 
-hrs, mins = line
+#define mp make_pair
+#define pb push_back
+#define pii pair<int, int>
+#define pll pair<long long, long long>
 
-done = False
-t = 0
-while(not done):
-    p_mins = mins[::-1]
-    i_mins = int(mins)
-    p_hrs = int(hrs[::-1])
-    i_hrs = int(hrs)
-    if (i_hrs in range(0, 6) or i_hrs in range(10, 16) or i_hrs in range(20, 24)) and i_mins <= p_hrs:
-        done = True
-        t += p_hrs - i_mins
-    else:
-        t += 60-i_mins
-        hrs = "0"+str((i_hrs+1)%24)
-        hrs = hrs[-2:]
-        mins = "00"
-print(t)
+typedef long long lli;
+
+using namespace std;
+
+int n, k;
+int hitagi[105], kaiki[105];
+
+int main(){
+    scanf("%i%i", &n, &k);
+    for(int i = 0; i < n; i++){
+        scanf("%i", &hitagi[i]);
+    }
+    for(int i = 0; i < k; i++){
+        scanf("%i", &kaiki[i]);
+    }
+    sort(kaiki, kaiki+k);
+    bool pos = false;
+    int last = 0;
+    for(int i = 0; i < n && !pos; i++){
+        if(hitagi[i] != 0 && hitagi[i] < last)
+            pos = true;
+        last = hitagi[i];
+    }
+    for(int i = 1; i < n && !pos; i++){
+        if(hitagi[i]==0 && hitagi[i-1]==0){
+            pos = true;
+        }else if(hitagi[i]==0){
+            int hold = hitagi[i-1];
+            if (kaiki[0] < hold)
+                pos = true;
+        }
+    }
+    for(int i = 0; i < n-1 && !pos; i++){
+        if(hitagi[i]==0){
+            int hold = hitagi[i+1];
+            if (kaiki[k-1] > hold)
+                pos = true;
+        }
+    }
+    printf(pos?"Yes\n":"No\n");
+}

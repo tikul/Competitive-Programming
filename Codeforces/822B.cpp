@@ -6,7 +6,7 @@
 #include <string>
 #include <utility>
 #include <queue>
-#include <unordered_set>
+//#include <unordered_set>
 #include <set>
 #include <unordered_map>
 
@@ -18,35 +18,34 @@ typedef long long ll;
 typedef pair<int,int> pii;
 typedef pair<pair<int,int>, int> ppi;
 
-int v1, v2, o2, a ,b, n;
+int n, m;
+string s, t;
+vector<int> pos[1005];
 
 int main(){
     // cin.sync_with_stdio(0);
     // cin.tie(0);
-    scanf("%i %i %i", &n, &a, &b);
-    v1 = a;
-    v2 = b;
-    int x, rej=0;
-    for(int i = 0; i < n; i++){
-        scanf("%i", &x);
-        if(x == 1){
-            if(v1 > 0){
-                v1--;
-            }else if(v2 > 0){
-                v2--;
-                o2++;
-            }else if(o2 > 0){
-                o2--;
-            }else{
-                rej++;
+    cin >> n >> m >> s >> t;
+    int best = 1005, bp=-1;
+    for(int i = 0; i+n <= m; i++){
+        // cout << i << "here\n";
+        int j = 0, k = i;
+        while(j < n){
+            if(s[j] != t[k]){
+                pos[i].push_back(j+1);
             }
-        }else{
-            if(v2 > 0){
-                v2--;
-            }else{
-                rej += 2;
-            }
+            j++;
+            k++;
+        }
+        if(pos[i].size() < best){
+            best = pos[i].size();
+            bp = i;
         }
     }
-    printf("%i", rej);
+    cout << best << "\n";
+    for(int i = 0; i < best; i++){
+        if(i != 0) cout << " ";
+        cout << pos[bp][i];
+    }
+
 }
